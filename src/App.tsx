@@ -1,24 +1,11 @@
-import { useState } from "react"
-
-import WebApp from "@twa-dev/sdk"
+import cardImg from "./assets/card.png"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1>TWA + Vite + React</h1>
-      <div>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <button
-          onClick={() =>
-            WebApp.showAlert(`Hello World! Current count is ${count}`)
-          }
-        >
-          Show Alert
-        </button>
+      <h1>EURO2024 Betting</h1>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <img src={cardImg} alt="card" />
       </div>
     </>
   )
